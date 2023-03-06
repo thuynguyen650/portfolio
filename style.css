@@ -1,3 +1,11 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(UTMAptima.ttf);
+}
+
+* {
+    font-family: myFirstFont;
+}
 /* hero background image */
 .bgimage {
     height:100vh;
@@ -21,13 +29,15 @@
     color: white;
 }
 
-.nav-link {
-    color: white!important;
-}
-
 /* about section image css */
 .imageAboutPage {
     width: 100%;
+}
+
+#about {
+    margin-top: 80px;
+    background-color: #fff;
+    color: #fff;
 }
 
 /* services section css */
@@ -50,7 +60,29 @@
     border: 1px solid #008000;
 }
 
-/* display background color black on navbar scroll */
-.navbarScroll.navbarDark {
-    background-color: black;
+.navbar {
+    border-bottom: 1px solid rgba(0,0,0,0.15);  
+    /* background: linear-gradient(red, #253E4C, blue, #F9C176);
+     */
+     background: linear-gradient(
+        to right,
+        #253E4C,
+        #36797F,
+        #BD6D2C,
+        #F9C176
+      );
+}
+
+.nav-logo {
+    height: 60px;
+}
+
+.nav-item {
+    margin-right: 26px;
+}
+
+.nav-link {
+    color: #fff!important;
+    text-transform: uppercase;
+    font-weight: bold;
 }
