@@ -31,13 +31,25 @@
 
 /* about section image css */
 .imageAboutPage {
-    width: 100%;
+    width: 600px;
 }
 
 #about {
-    margin-top: 80px;
-    background-color: #fff;
+    margin-top: 76px;
+    background-color: #253E4C;
     color: #fff;
+    padding-top: 15px;
+    padding-bottom: 100px;
+}
+
+.about-heading {
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+.about-content {
+    margin-left: 300px;
+    margin-top: 100px;
 }
 
 /* services section css */
@@ -64,13 +76,15 @@
     border-bottom: 1px solid rgba(0,0,0,0.15);  
     /* background: linear-gradient(red, #253E4C, blue, #F9C176);
      */
-     background: linear-gradient(
+     /* background: linear-gradient(
         to right,
         #253E4C,
         #36797F,
         #BD6D2C,
         #F9C176
-      );
+      ); */
+      background: #fff;
+      padding: 0!important;
 }
 
 .nav-logo {
@@ -82,7 +96,41 @@
 }
 
 .nav-link {
-    color: #fff!important;
+    color: #000!important;
     text-transform: uppercase;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
+
+.flipY {
+    animation-name: spin, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(-360deg);
+    }
+  }
+  @keyframes depth {
+    0% {
+      text-shadow: 0 0 black;
+    }
+    25% {
+      text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+    }
+    50% {
+      text-shadow: 0 0 black;
+    }
+    75% {
+      text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black,
+        -5px 0 black;
+    }
+    100% {
+      text-shadow: 0 0 black;
+    }
+  }
