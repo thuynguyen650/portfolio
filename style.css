@@ -36,8 +36,8 @@
 
 #about {
     margin-top: 76px;
-    background-color: #253E4C;
-    color: #fff;
+    /* background-color: #253E4C; */
+    /* color: #fff; */
     padding-top: 15px;
     padding-bottom: 100px;
 }
@@ -76,14 +76,14 @@
     border-bottom: 1px solid rgba(0,0,0,0.15);  
     /* background: linear-gradient(red, #253E4C, blue, #F9C176);
      */
-     /* background: linear-gradient(
+     background: linear-gradient(
         to right,
         #253E4C,
         #36797F,
         #BD6D2C,
         #F9C176
-      ); */
-      background: #fff;
+      );
+      /* background: #fff; */
       padding: 0!important;
 }
 
