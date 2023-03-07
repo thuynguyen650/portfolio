@@ -31,28 +31,50 @@
 
 /* about section image css */
 .imageAboutPage {
-    width: 600px;
+    width: 556px;
+    margin-top: 50px;
 }
 
 #about {
-    margin-top: 76px;
-    /* background-color: #253E4C; */
-    /* color: #fff; */
+    margin-top: 30px;
     padding-top: 15px;
     padding-bottom: 100px;
+    color: #253E4C;
+}
+
+.about-slogan {
+    font-style: italic;
+    font-weight: 600;
+    margin: 0;
 }
 
 .about-heading {
-    margin-left: 300px;
-    margin-top: 100px;
+    margin: 14px 0;
+    font-weight: bold;
+}
+
+.about-slogan::before {
+    content: "• ";
+    color: #FFBB55;
+    font-size: 22px;
 }
 
 .about-content {
-    margin-left: 300px;
+    margin-left: 212px;
     margin-top: 100px;
 }
 
+.about-text {
+    font-size: 18px;
+    padding-top: 10px;
+    line-height: 34px;
+}
+
 /* services section css */
+#services {
+    padding-bottom: 100px;
+}
+
 .servicesText.card {
     height: 280px;
     cursor: pointer;
@@ -68,6 +90,14 @@
 .card:hover .servicesIcon {
     color: #008000;
 }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .servicesText:hover {
     border: 1px solid #008000;
 }
@@ -92,8 +122,7 @@
 }
 
 .about-logo {
-    color: #BD6D2C;
-    font-weight: bold;
+    color: #FFBB55;
     background-image: url("images/logoOnlyImage.png");
 }
 
@@ -108,4 +137,51 @@
     border: none!important;
     color: #fff!important;
     padding: 10px!important;
+}
+
+.service-icon {
+    text-align: center;
+}
+
+.service-icon img {
+    width: 100px;
+}
+
+#projects {
+    padding-bottom: 100px;
+}
+
+.gallery {
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+}
+
+.v-stretch {
+    grid-row: span 2;
+}
+
+.h-stretch {
+    grid-column: span 2;
+}
+
+.big-stretch {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.gallery div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#footer {
+    background-color: #253E4C;
+    color: #fff;
 }
