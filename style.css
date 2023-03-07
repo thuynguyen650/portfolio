@@ -53,12 +53,6 @@
     font-weight: bold;
 }
 
-.about-slogan::before {
-    content: "• ";
-    color: #FFBB55;
-    font-size: 22px;
-}
-
 .about-content {
     margin-left: 212px;
     margin-top: 100px;
