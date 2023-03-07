@@ -77,7 +77,6 @@
 
 .servicesText.card {
     height: 280px;
-    cursor: pointer;
   }
 .servicesIcon {
     font-size: 36px;
@@ -98,14 +97,18 @@
     align-items: center;
 }
 
-.servicesText:hover {
-    border: 1px solid #008000;
-}
-
 .navbar {
-    border-bottom: 1px solid rgba(0,0,0,0.15);  
-      background: #fff;
-      padding: 0!important;
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+        to right,
+        #253E4C,
+        #36797F,
+        #BD6D2C,
+        #F9C176
+      );
+    background: #fff;
+    padding: 0!important;
 }
 
 .nav-logo {
@@ -122,7 +125,7 @@
 }
 
 .about-logo {
-    color: #FFBB55;
+    color: #BD6D2C;
     background-image: url("images/logoOnlyImage.png");
 }
 
