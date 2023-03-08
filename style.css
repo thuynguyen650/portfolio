@@ -6,6 +6,10 @@
 * {
     font-family: myFirstFont;
 }
+
+h1 {
+    color: #253E4C;
+}
 /* hero background image */
 .bgimage {
     height:100vh;
@@ -145,6 +149,9 @@
     padding: 10px!important;
 }
 
+#services {
+    color: #253E4C;
+}
 .service-icon {
     text-align: center;
 }
