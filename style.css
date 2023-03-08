@@ -107,6 +107,7 @@
 
 .nav-logo {
     height: 60px;
+    margin-left: 40px;
 }
 
 .nav-item {
@@ -114,13 +115,21 @@
 }
 
 .nav-link {
-    color: #000!important;
+    color: #253E4C!important;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .about-logo {
-    color: #FC5A02;
+    color: #FAAD03;
     background-image: url("images/logoOnlyImage.png");
+}
+
+
+.about-slogan::before {
+    content: "• ";
+    color: #FFBB55;
+    font-size: 22px;
 }
 
 .btn-contact {
@@ -175,10 +184,51 @@
 .gallery div img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 #footer {
+    background: linear-gradient(
+        to right,
+        #253E4C,
+        #36797F,
+        #BD6D2C,
+        #F9C176
+      );
+    color: #fff;
+    padding: 30px 0 20px 0;
+}
+
+/* footer styles */
+.footer-logo img {
+    width: 84px;
+    margin: 0 40px;
+}
+
+.footer-contact {
+    font-size: 18px;
+}
+
+.footer-contact a {
+    text-decoration: none;
+}
+
+.footer-right a {
+    margin: 20px;
+    font-size: 30px;
+}
+
+.btn-project {  
+    background-color: #FAAD03;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-project:hover {
     background-color: #253E4C;
     color: #fff;
 }
