@@ -36,14 +36,19 @@ h1 {
 /* about section image css */
 .imageAboutPage {
     width: 556px;
-    margin-top: 50px;
+    margin-top: 26px;
 }
 
-#about {
+#about, #thietke {
     margin-top: 30px;
     padding-top: 15px;
     padding-bottom: 100px;
     color: #253E4C;
+}
+
+#about video {
+    object-fit: fill;
+    margin-top: 50px;
 }
 
 .about-slogan {
@@ -58,8 +63,8 @@ h1 {
 }
 
 .about-content {
-    margin-left: 212px;
-    margin-top: 100px;
+    margin-left: 182px;
+    margin-top: 60px;
 }
 
 .about-text {
@@ -125,14 +130,17 @@ h1 {
 }
 
 .about-logo {
-    color: #FAAD03;
+    color: #ed6d00;
     background-image: url("images/logoOnlyImage.png");
 }
 
-
+.about-contact strong{
+    line-height: 0;
+    margin-top: 16px;
+}
 .about-slogan::before {
     content: "• ";
-    color: #FFBB55;
+    color: #ed6d00;
     font-size: 22px;
 }
 
@@ -144,9 +152,12 @@ h1 {
         #BD6D2C,
         #F9C176
       );
-    border: none!important;
-    color: #fff!important;
-    padding: 10px!important;
+      border: none!important;
+      color: #fff!important;
+      padding: 0px 14px 3px 14px!important;
+      text-decoration: none;
+      border-radius: 22px;
+      margin-left: 155px;
 }
 
 #services {
@@ -191,7 +202,7 @@ h1 {
 .gallery div img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit:cover;
 }
 
 #footer {
@@ -203,7 +214,7 @@ h1 {
         #F9C176
       );
     color: #fff;
-    padding: 30px 0 20px 0;
+    padding: 18px 0 4px 0;
 }
 
 /* footer styles */
@@ -238,4 +249,34 @@ h1 {
 .btn-project:hover {
     background-color: #253E4C;
     color: #fff;
+}
+
+
+
+
+.thietke-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.thietke-title {
+    position: absolute;
+    z-index: -10;
+    left: 0; 
+    right: 0; 
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+.thietke-img {
+    width: 100%;
+    max-height: 600px;
+    z-index: 10;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.thietke-img:hover {
+    opacity: 0;
 }
