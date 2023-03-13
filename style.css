@@ -10,6 +10,7 @@
 h1 {
     color: #253E4C;
 }
+
 /* hero background image */
 .bgimage {
     height:100vh;
@@ -39,16 +40,20 @@ h1 {
     margin-top: 26px;
 }
 
-#about, #thietke {
+#about, #thietke, #thucduongngocan {
     margin-top: 30px;
     padding-top: 15px;
     padding-bottom: 100px;
     color: #253E4C;
 }
 
+#thucduongngocan {
+    padding-bottom: 0;
+}
+
 #about video {
     object-fit: fill;
-    margin-top: 50px;
+    margin-top: 74px;
 }
 
 .about-slogan {
@@ -63,7 +68,7 @@ h1 {
 }
 
 .about-content {
-    margin-left: 182px;
+    margin-left: 172px;
     margin-top: 60px;
 }
 
@@ -132,6 +137,7 @@ h1 {
 .about-logo {
     color: #ed6d00;
     background-image: url("images/logoOnlyImage.png");
+    font-size: 40px;
 }
 
 .about-contact strong{
@@ -157,7 +163,7 @@ h1 {
       padding: 0px 14px 3px 14px!important;
       text-decoration: none;
       border-radius: 22px;
-      margin-left: 155px;
+      margin-left: 80px;
 }
 
 #services {
@@ -251,7 +257,9 @@ h1 {
     color: #fff;
 }
 
-
+#thietke a {
+    color: #253E4C;
+}
 
 
 .thietke-item {
@@ -267,8 +275,11 @@ h1 {
     top: 0;
     bottom: 0;
     margin: auto;
-    width: 100px;
-    height: 100px;
+    width: 260px;
+    height: 200px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
 }
 .thietke-img {
     width: 100%;
@@ -279,4 +290,12 @@ h1 {
 
 .thietke-img:hover {
     opacity: 0;
+}
+
+/* .sanpham-img {
+    min-height: 644px;
+} */
+
+.color-text {
+    color: #ed6d00;
 }
